@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .container div {
+            background-color: #f5f5dc;
+            border: 2px solid #6aa56a;
+            padding: 15px;
+            /* background-color: white;
+            text-align: left;
+            padding: 10px;
+            font-size: medium; */
+        }
+
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+
+        .item2 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 6;
+        }
+
+        .item3 {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row: 2 / 6;
+        }
+
+        .item4 {
+            grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .item5 {
+            grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
+
+        .item6 {
+            grid-column-start: 1;
+            grid-column-end: 6;    
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Header/Company Logo</div>
+        <div class="item2"><a href="">Link 1</a><br>
+        <a href="">Link 2</a><br>
+        <a href="">Link 3</a></div>
+        <div class="item3"><b>Content area</b><br><p>Here we display the section in source order for screens less than 576 pixels wide.
+            The, we go to a two column layout for screen between 576 and 767 pixels wide.
+            Then, we go to a three column layout for screens over 767 pixels wide.
+            Resize the browser window to see the responsive effect.
+        </p></div>
+        <div class="item4">Ads</div>
+        <div class="item5">Sidebar</div>
+        <div class="item6">The footer</div>
+    </div>
+</body>
+</html>
