@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        div.sticky {
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: #cae8ca;
+            border: 2px solid #4CAF50;
+        }
+
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 80px;
+            height: 80px;
+            border: 3px solid black;
+            background-color: #73AD21;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Sticky & Fixed property</h1>
+
+    <h2>Using position: sticky & fixed</h2>
+
+    <div class="sticky">I have position sticky!</div>
+    <div class="fixed">fixed div</div>
+
+    <div style="padding-bottom: 2000px;">
+        <p>Scroll back up to remove the stickyness!</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat officiis aspernatur vitae voluptatem? Et reprehenderit, magnam assumenda tempora eum possimus asperiores dolor corrupti. Voluptate corrupti perspiciatis, enim veritatis eveniet laborum!</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, commodi porro! Officiis tenetur, earum enim iure et voluptates non sit exercitationem omnis dolorem quis officia! Suscipit maiores praesentium quis officiis.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nisi dolores voluptate voluptatibus corporis maxime assumenda incidunt. Explicabo excepturi dicta sequi, quos laborum maxime autem, culpa itaque tempora sapiente earum!</p>
+    </div>
+
+</body>
+</html>
